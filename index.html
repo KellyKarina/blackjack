@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="dealer-container">
+            <h2>Dealer</h2>
+            <div id="dealer-hand" class="hand">
+                <div id="hidden-card" ></div>
+            </div>
+        </div>
+        <div id="player-container">
+            
+            <div id="player-hand" class="hand"></div>
+            <h2>Player</h2>
+            <div id="aposta-container">
+                
+              
+            </div>
+            <div id="bet-container">
+                <p>Saldo: <span id="bet">R$ 500</span> </p>
+                <label for="aposta">Bet:</label>
+                <input type="number" id="aposta" min="1" max="500" value="1" disabled>
+            </div>
+            <div id="buttons">
+                <button onclick="pedirCarta()">Pedir Carta</button>
+                <button onclick="manterCartas()">Manter Cartas</button>
+               
+                <button onclick="iniciarJogo()">Iniciar Jogo</button>
+            </div>
+        </div>
+        <div id="resultado"></div>
+        <div id="fichas-container">
+            <img src="img/ficha10.png" alt="Ficha 10" class="ficha" onclick="adicionarFicha(10)">
+            <img src="img/ficha25.png" alt="Ficha 25" class="ficha" onclick="adicionarFicha(25)">
+            <img src="img/ficha50.png" alt="Ficha 50" class="ficha" onclick="adicionarFicha(50)">
+            <img src="img/fichaa100.png" alt="Ficha 100" class="ficha" onclick="adicionarFicha(100)">
+            <img src="img/ficha500.png" alt="Ficha 500" class="ficha" onclick="adicionarFicha(500)">
+            <img src="img/ficha2x.png" alt="Ficha x2" class="ficha" onclick="dobrarAposta()">
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

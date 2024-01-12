@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('./img/10091771.jpg'); 
+    background-size: cover;
+}
+
+
+#game-container {
+    position: fixed;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hand {
+    display: flex;
+ 
+    gap: 1rem;
+   
+}
+
+.card {
+    width: 100px; 
+    height: 130px;
+    background-color: white;
+    
+    transition: opacity 1s ease-in-out;
+    border-radius: 13px;
+    margin-right: 10px; 
+
+}
+
+#buttons button {
+    margin: 5px;
+}
+
+#resultado {
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#dealer-container,
+#player-container {
+    margin-bottom: 20px;
+    gap: 1rem;
+  
+}
+
+#aposta-container {
+    margin-top: 10px;
+}
+
+
+
+
+
+#buttons button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#buttons button:hover {
+    background-color: #45a049;
+}
+
+
+#fichas-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#bet-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#bet-container p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+#bet {
+    font-weight: bold;
+}
+
+#saldo {
+    font-weight: bold;
+}
+
+.ficha {
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.ficha:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#hidden-card {
+    width: 100px;
+    height: 130px;
+    border-radius: 13px;
+    margin-right: 10px;
+}
